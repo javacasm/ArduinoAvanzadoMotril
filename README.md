@@ -25,9 +25,8 @@
 # Contenidos
 
 ## Programación 
+* [Uso de hardware avanzado ESP32 compatible con Arduino](./MasQueArduino.md)
 * Programación en C++ 
-* Uso de hardware avanzado ESP32 compatible con Arduino
-* Interrupciones
 * Acceso remoto: Wifi y Bluetooth
 
 ## Sensores
@@ -40,7 +39,6 @@
 * Manejo de motores
 * Control con Infrarrojos
 * Control vía Bluetooth y Wifi
-
 
 ## Internet de las cosas
 * Introducción a Internet de las Cosas (IOT)
