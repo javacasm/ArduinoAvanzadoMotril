@@ -1,31 +1,28 @@
 ## ESP32
 
-
-![Pinout](https://github.com/espressif/arduino-esp32/raw/master/docs/esp32_pinmap.png)
+![Pinout](./images/ESP32Pinout.png)
 
 ```
-CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor, operating at 160 or 240 MHz and performing at up to 600 DMIPS
+CPU: Xtensa dual-core 32-bit LX6 microprocessor 160 o 240 MHz hasta 600 DMIPS
 Ultra low power (ULP) co-processor
-Memory: 520 KiB SRAM
-Wireless connectivity:
+Memoria: 520 KiB SRAM
 Wi-Fi: 802.11 b/g/n
 Bluetooth: v4.2 BR/EDR and BLE
-Peripheral interfaces:
-12-bit SAR ADC up to 18 channels
+12-bit SAR ADC en 18 canales
 2 × 8-bit DACs
-10 × touch sensors (capacitive sensing GPIOs)
+10 × sensores capacitivos GPIOs
 4 × SPI
 2 × I²S interfaces
 2 × I²C interfaces
 3 × UART
-SD/SDIO/CE-ATA/MMC/eMMC host controller
-SDIO/SPI slave controller
-Ethernet MAC interface with dedicated DMA and IEEE 1588 Precision Time Protocol support
+SD/SDIO/CE-ATA/MMC/eMMC 
+SDIO/SPI slave 
+Ethernet MAC con DMA 
 CAN bus 2.0
-Infrared remote controller (TX/RX, up to 8 channels)
+Controlador Infrarrojo (TX/RX, en 8 canales)
 Motor PWM
 LED PWM (up to 16 channels)
-Hall effect sensor
+Sensor de efecto Hall 
 Ultra low power analog pre-amplifier
 ```
 
@@ -76,8 +73,6 @@ El ejemplo blink funcionará
 
 ## Referencias
 
-[Smart ESP32 Car](https://github.com/javacasm/SmartESP32Car)
-
 [Configuracion del IDE](https://www.hackster.io/uncle-yong/wemos-r32-with-arduino-startup-guide-7bc841)
 
 [Tutorial](http://kio4.com/arduino/100_Wemos_ESP32.htm)
@@ -87,3 +82,5 @@ El ejemplo blink funcionará
 [ESP32 WROOM spec sheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf)
 
 [ESP32 (wikipedia)](https://en.wikipedia.org/wiki/ESP32)
+
+[Smart ESP32 Car](https://github.com/javacasm/SmartESP32Car)
