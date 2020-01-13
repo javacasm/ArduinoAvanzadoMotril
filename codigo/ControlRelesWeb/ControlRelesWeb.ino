@@ -1,28 +1,42 @@
 // include libraries
 
-#include "Wifi.h"
 
 #include "webServer.h"
 #include "Reles.h"
+#include "Config.h"
 
-#include "Indicator.h"
+#include <JeVe_EasyOTA.h>  // https://github.com/jeroenvermeulen/JeVe_EasyOTA
+
+
+#define ARDUINO_HOSTNAME "OTA-nodeMCU_javacasm"
+
+
+EasyOTA OTA;
+
+// configure server
 
 void setup(){
   Serial.begin(9600);
 
-  setup_indicator();
-
-  setup_Wifi();
-
-  setup_reles();
-      
-  setup_server();
-    
+  OTA.onMessage([](char *message, int line) {
+    Serial.println(message);
+  });
+  OTA.setup(ssid, password, ARDUINO_HOSTNAME);
+  
+  // connect
+    while (WiFi.status() != WL_CONNECTED)
+    {
+        delay(200);
+        Serial.print(".");
+    }
+    Serial.println("Connectado");
+    // set up the callback for http server
+    setup_server();
+    setup_reles();
 }
 void loop()
 {
-  loop_wifi();
-
-  loop_webserver();
-     
+    // check for client connections
+     severhandler();
+     OTA.loop();
 }

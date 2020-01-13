@@ -5,20 +5,12 @@
 
 ESP8266WebServer server(80);
 
-const char *form = 
-"<HTML>"
-"<head></head>"
-"<body>"
-"<center><form action='/'>"
+const char *form = "<center><form action='/'>"
 "<button name='dir' type='submit' value='1'>ON Rele 1</button>"
-"<button name='dir' type='submit' value='4'>ON Indicador 2</button><br>"
+"<button name='dir' type='submit' value='3'>ON Rele 2</button><br>"
 "<button name='dir' type='submit' value='2'>OFF Rele 1</button>"
-"<button name='dir' type='submit' value='3'>OFF Indicador 2</button>"
-"<br><a href=\"https://github.com/javacasm/Teleco_IOTHT/\">Codigo</a>"
-"<br><img src=\"https://github.com/javacasm/Teleco_IOT/blob/master/images/Licencia_CC_peque.png?raw=true\">"
-"</form></center>"
-"</body>"
-"</HTML>";
+"<button name='dir' type='submit' value='4'>OFF Rele 2</button>"
+"</form></center>";
 
 void handle_form()
 {
@@ -54,14 +46,9 @@ void handle_form()
 void setup_server(){
   server.on("/", handle_form);
   server.begin();
-
-  
-  Serial.println("Server started");
-
-  // Print the IP address
-  Serial.println(WiFi.localIP());
 }
 
-void loop_webserver(){
+void severhandler(){
   server.handleClient();
 }
+

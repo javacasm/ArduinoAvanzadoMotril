@@ -8,16 +8,10 @@ void setup_reles(){
 
 
 void apagaRele(int pinRele){
-    if(pinRele == D1 ) Serial.print("D1");
-    else Serial.print("D4");
-    Serial.println(" Off");
-    
     digitalWrite(pinRele, LOW);
 }
 
 void enciendeRele(int pinRele){
-    if(pinRele == D1 ) Serial.print("D1");
-    else Serial.print("D4");
-    Serial.println(" On");  
     digitalWrite(pinRele, HIGH);
 }
+
