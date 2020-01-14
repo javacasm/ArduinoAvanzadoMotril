@@ -17,7 +17,7 @@
 
 int pinSensorDHT = 2;
 int pinRele = 8;
-int pinPotenciometro = A0
+int pinPotenciometro = A0;
 
 SimpleDHT11 sensorSalon(pinSensorDHT);
 
