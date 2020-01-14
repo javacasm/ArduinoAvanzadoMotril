@@ -15,12 +15,11 @@ Enero-Febrero de 2020
 * Entender el concepto de Internet de las Cosas y su implementación en sistemas sencillos
 
 
-# Contenidos
+ Contenidos
 
 ## Programación 
+* [Uso de hardware avanzado ESP32 compatible con Arduino](./MasQueArduino.md)
 * Programación en C++ 
-* Uso de hardware avanzado ESP32 compatible con Arduino
-* Interrupciones
 * Acceso remoto: Wifi y Bluetooth
 
 ## Sensores
@@ -34,10 +33,9 @@ Enero-Febrero de 2020
 * Control con Infrarrojos
 * Control vía Bluetooth y Wifi
 
-
 ## Internet de las cosas
-* Introducción a Internet de las Cosas (IOT)
+* [Introducción a Internet de las Cosas](./base_iot.md) ([IOT])(./IOT.md)
 * Publicación de contenido en internet
 * Protocolos de envio de datos (REST, MQTT)
-* Plataformas online ( Thingspeak, Thinger.io, etc.)
+* [Plataformas online ( Thingspeak, Thinger.io, etc.)](./Plataformas.md)
 * Lectura de tarjetas RFID
