@@ -6,7 +6,7 @@ Instalamos la librería SimleDHT (desde el gestor de librerías) y a partir del 
 
 ![Montaje DHT11 con rele](https://github.com/javacasm/ScratchArduinoMotril/raw/master/imagenes/DHT11ReleUno_bb.png)
 
-[Ejemplo con arduino](https://github.com/javacasm/ArduinoAvanzadoMotril/blob/master/codigo/TermostatoDHT11/TermostatoDHT11.ino)
+[Ejemplo con C++](https://github.com/javacasm/ArduinoAvanzadoMotril/blob/master/codigo/TermostatoDHT11/TermostatoDHT11.ino)
 
 [Ejemplo con arduinoblocks](https://github.com/javacasm/ScratchArduinoMotril/blob/master/arduinoBlocks.md#midiendo-calculando-controlando)
 
