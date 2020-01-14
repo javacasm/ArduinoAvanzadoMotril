@@ -21,13 +21,13 @@ Se realiza en 3 fases y es muy importante el orden
 * Se verifica que no falten símbolos
 * Se genera el ejecutable
 
-En este vídeo explicamos el proceso con un [Ejemplo](./Preprocesador/Preprocesador.ino)
+En este vídeo explicamos el proceso con un [Ejemplo](./codigo/Preprocesador/Preprocesador.ino)
 
 [Vídeo](https://youtu.be/ODG07Y9SIHc)
 
 
 
-![1](../images/ProcesoCompilacion.png)
+![1](./images/ProcesoCompilacion.png)
 
 
-[Ejemplo](./Preprocesador/Preprocesador.ino)
+[Ejemplo](./codigo/Preprocesador/Preprocesador.ino)
