@@ -190,15 +190,14 @@ El montaje sería:
 
 ![3PotRGB](./images/3Pot-RGB.png)
 
-Y el programa
-
-![3PotRGB](./images/3Pot-RGB-prog.png)
 
 # Motores
 
-Para controlar motores vamos a usar una placa especializada en ello. En concreto usaremos una [placa estándar basada en el chip L298](http://www.dfrobot.com/wiki/index.php?title=Arduino_Motor_Shield_(L298N)_(SKU:DRI0009))
+Para controlar motores vamos a usar una placa especializada que usa el conocido controlador L298
 
-Esta placa es capaz de controlar 2 motores.
+![Montaje L298](./images/L298_bb.png)
+
+Esta placa es capaz de controlar 2 motores de hasta 2A cada uno.
 
 Comentar el tema de alimentación y la forma de controlarlo **Alimentación**
 
@@ -206,11 +205,14 @@ Esta placa, de tipo shield, se conecta encima de arduino y usa unos pines concre
 
 |Entrada|pin|Utilidad|
 |---|---|---|
-|M1|4| Sentido de giro del motor 1|
-|E1|5| Velocidad de giro del motor 1|
-|E2|6| Velocidad de giro del motor 2|
-|M2|7| Sentido de giro del motor 2|
+|EB|5| Velocidad de giro del motor 2|
+|I4|7| Sentido de giro del motor 2|
+|I3|8| Sentido de giro del motor 2|
+|I2|9| Sentido de giro del motor 1|
+|I1|10| Sentido de giro del motor 1|
+|EA|11| Velocidad de giro del motor 1|
 
+Resaltar que hemos usado los pines PWM 11 y 5 para controlar la velocidad
 
 ## Código
 
