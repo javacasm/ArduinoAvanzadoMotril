@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include <SimpleDHT.h>
 
 // for DHT11, 
@@ -6,7 +5,7 @@
 //      GND: GND
 //      DATA: 2
 int patillaSensorSalon = 2;
-int pinRele = 11;
+int pinRele = 8;
 SimpleDHT11 sensorSalon(patillaSensorSalon);
 
 void setup() {
