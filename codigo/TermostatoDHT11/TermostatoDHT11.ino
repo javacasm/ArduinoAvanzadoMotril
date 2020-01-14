@@ -1,12 +1,19 @@
 #include <SimpleDHT.h>
 
-// for DHT11, 
+// Basado en el ejemplo DHT11Default de la la librería SimpleDHT
+
+// DHT11, 
 //      VCC: 5V or 3V
 //      GND: GND
 //      DATA: 2
-int patillaSensorSalon = 2;
+// Rele
+//      VCC: 5V
+//      GND: GND
+//      S:  8
+
+int pinSensorDHT = 2;
 int pinRele = 8;
-SimpleDHT11 sensorSalon(patillaSensorSalon);
+SimpleDHT11 sensorSalon(pinSensorDHT);
 
 void setup() {
   Serial.begin(115200);
