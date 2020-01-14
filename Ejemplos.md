@@ -1,5 +1,15 @@
 # Ejemplos
 
+## Termostado con sensor DHT11
+
+Instalamos la librería SimleDHT (desde el gestor de librerías) y a partir del Ejemplo DHT11Defautl creamos un termostado que activará un relé conectado al pin 8
+
+![Montaje DHT11 con rele](https://github.com/javacasm/ScratchArduinoMotril/raw/master/imagenes/DHT11ReleUno_bb.png)
+
+[Ejemplo con arduino](https://github.com/javacasm/ArduinoAvanzadoMotril/blob/master/codigo/TermostatoDHT11/TermostatoDHT11.ino)
+
+[Ejemplo con arduinoblocks](https://github.com/javacasm/ScratchArduinoMotril/blob/master/arduinoBlocks.md#midiendo-calculando-controlando)
+
 ## LCD I2C
 
 [Hello World](https://github.com/javacasm/ArduinoAvanzadoMotril/blob/master/codigo/LCDHelloWorld/LCDHelloWorld.ino)
