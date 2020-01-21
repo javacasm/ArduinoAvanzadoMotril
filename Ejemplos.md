@@ -93,6 +93,7 @@ Usaremos el tipo de variable float
 	}
 
 * * *
+
 # Escritura de valores analógicos
 
 ## Usando técnicas como PWM podemos simular valores intermedios: 0 - 255
