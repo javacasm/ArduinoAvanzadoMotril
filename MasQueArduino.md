@@ -95,6 +95,19 @@ El ejemplo blink funcionará
 ¿Qué ejemplos encontramos?
 
 
+## Ejemplos
+
+[Pines](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)
+
+### PWM
+
+[PWM](https://randomnerdtutorials.com/esp32-pwm-arduino-ide/)
+
+
+### ADC
+
+[ADC](https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/)
+
 ## Referencias
 
 [Configuracion del IDE](https://www.hackster.io/uncle-yong/wemos-r32-with-arduino-startup-guide-7bc841)
