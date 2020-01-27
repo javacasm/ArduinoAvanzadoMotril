@@ -42,6 +42,8 @@ Podemos seleccionar las opciones en la barra de abajo de la ventana
 
 #### Ejemplos
 
+F1 -> Arduino Examples
+
 ### Configuración
 
 Para que detecte y verifique correctamente el código cambiaremos la configuración **"C_Cpp:Intelli Sense Engine"** a **"Tag Parser"** para ello entramos en la configuración de la extensión de C++. 
