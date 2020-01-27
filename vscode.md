@@ -25,6 +25,8 @@ Y buscamos la extensión de **Arduino**. Yo uso la primera opción que es una ex
 
 En lugar de utilizar muchas barras de iconos, para acceder a las diferentes funcionalidades Pulsamos **F1** o **ctrl + shift + P** y buscamos la opción que queremos usar, poniendo en primer lugar la extensión. 
 
+### Uso con Arduino
+
 La extensión correspondiente se activa cuando abrimos un fichero del tipo Arduino ***.ino**
 
 Podemos verificar el código o subirlo a la placa con los iconos que aparecen arriba a la derecha
@@ -38,3 +40,17 @@ Podemos seleccionar las opciones en la barra de abajo de la ventana
 * Abrir/Cerrar el Monitor Serie
 * Seleccionar el puerto Serie
 
+#### Ejemplos
+
+### Configuración
+
+Para que detecte y verifique correctamente el código cambiaremos la configuración **"C_Cpp:Intelli Sense Engine"** a **"Tag Parser"** para ello entramos en la configuración de la extensión de C++. 
+
+
+Necesitamos tener instalado un entorno de Arduino y cambiar la configuración en **File -> Preference -> Settings** Seleccionamos **Extensiones** y ahí la de Arduino
+
+Modificamos:
+
+* **Open PDEFiletype** para poder abrir los ficheros del formato antiguo pde 
+* **Path** seleccionamos la carpeta donde tenemos instalado el entorno arduino
+* "arduino.additionalUrls": "https://dl.espressif.com/dl/package_esp32_index.json"
