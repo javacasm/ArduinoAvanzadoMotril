@@ -108,6 +108,19 @@ El ejemplo blink funcionará
 
 [ADC](https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/)
 
+### Wifi
+
+[Ejemplo control wifi](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/)
+
+[Codigo](https://github.com/RuiSantosdotme/ESP32-Course/raw/master/code/WiFi_Web_Server_Outputs/WiFi_Web_Server_Outputs.ino)
+
+Control de dispositivos via Wifi:
+<ul>
+
+[Relé controlado via web](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/codigo/) [ZIP](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/codigo/ControlRelesWeb.zip)
+
+![Montaje](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/images/4.ESP_DHT-LCD_rele_bb.png)
+
 ## Referencias
 
 [Configuracion del IDE](https://www.hackster.io/uncle-yong/wemos-r32-with-arduino-startup-guide-7bc841)
