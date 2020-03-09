@@ -114,12 +114,76 @@ El ejemplo blink funcionará
 
 [Codigo](https://github.com/RuiSantosdotme/ESP32-Course/raw/master/code/WiFi_Web_Server_Outputs/WiFi_Web_Server_Outputs.ino)
 
-Control de dispositivos via Wifi:
-<ul>
+## Control de dispositivos via Wifi:
 
-[Relé controlado via web](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/codigo/) [ZIP](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/codigo/ControlRelesWeb.zip)
+[Relé controlado via web](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/codigo/) [ZIP](./codigo/ControlRelesWeb.zip)
 
-![Montaje](https://github.com/javacasm/ArduinoAvanzadoPriego/blob/master/images/4.ESP_DHT-LCD_rele_bb.png)
+![Montaje](./images/4.ESP_DHT-LCD_rele_bb.png)
+
+### Control de dispositivos con ESPAsyncWebServer
+
+
+* Instalamos [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer/archive/master.zip)
+
+* Instalamos [AsyncTCP](https://github.com/me-no-dev/AsyncTCP/archive/master.zip)
+
+[Ejemplo](https://techtutorialsx.com/2018/03/02/esp32-arduino-http-server-controlling-a-relay-remotely/)
+
+```C++
+#include <WiFi.h>
+#include <ESPAsyncWebServer.h>
+  
+const char* ssid = "yourNetworkName";
+const char* password =  "yourNetworkPass";
+  
+AsyncWebServer server(80);
+  
+int relayPin = 23;
+  
+void setup(){
+  
+  pinMode(relayPin, OUTPUT);
+  digitalWrite(relayPin, LOW);
+  
+  Serial.begin(115200);
+  
+  WiFi.begin(ssid, password);
+  
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting to WiFi..");
+  }
+  
+  Serial.println(WiFi.localIP());
+  
+  server.on("/relay/off", HTTP_PATCH, [](AsyncWebServerRequest *request){
+    request->send(200, "text/plain", "ok");
+    digitalWrite(relayPin, LOW);
+  });
+  
+  server.on("/relay/on", HTTP_PATCH, [](AsyncWebServerRequest *request){
+    request->send(200, "text/plain","ok");
+    digitalWrite(relayPin, HIGH);
+  });
+  
+  server.on("/relay/toggle", HTTP_PATCH, [](AsyncWebServerRequest *request){
+    request->send(200, "text/plain","ok");
+    digitalWrite(relayPin, !digitalRead(relayPin));
+  });
+  
+  server.on("/relay", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send(200, "text/plain", String(digitalRead(relayPin)));
+  });
+  
+  server.begin();
+}
+  
+void loop(){}
+```
+
+### Ejemplo de control de rele Arduino  Wifi
+
+[Ejemplo](https://github.com/javacasm/SmartCities_Library/blob/master/examples/Domotica/_6_Reles/_6_Reles.ino)
 
 ## Referencias
 
