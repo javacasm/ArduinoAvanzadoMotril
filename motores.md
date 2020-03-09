@@ -18,7 +18,7 @@ Veamos como se hace con el L298, capaz de controlar 2 motores, aunque nosotros e
 
 Para controlarlo usaremos los pines IN3 y IN4 con los controlaremos la dirección de giro del motor y el EnB que nos permitirá controlar la velocidad.
 
-Este sería el código
+Este sería el [código](./codigo/Test_L298.ino)
 
     // Variables globales
 
