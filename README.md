@@ -37,7 +37,7 @@
 
 ## Control de motores
 * Manejo de actuadores analógicos y digitales
-* Manejo de motores
+* [Manejo de motores](./motores.md)
 * Control con Infrarrojos
 * Control vía Bluetooth y Wifi
 
