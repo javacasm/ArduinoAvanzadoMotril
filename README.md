@@ -28,22 +28,14 @@
 * [Programación en C++](./Programacion_C++.md) [Proceso de compilación](./procesoCompilacion.md)
 * [Ejemplos sencillos en C++](./Ejemplos.md)
 * [Uso de hardware avanzado ESP32 compatible con Arduino](./MasQueArduino.md)
-* Acceso remoto: Wifi y Bluetooth
 
-## Sensores
-* Sensores meteorológicos
-* Sensores inerciales: acelerómetros y giróscopos
-* Lectura de tiempos de RTC
 
 ## Control de motores
-* Manejo de actuadores analógicos y digitales
 * [Manejo de motores](./motores.md)
 * [Controlando motores con ESP](https://randomnerdtutorials.com/esp32-dc-motor-l298n-motor-driver-control-speed-direction/)
-* Control vía Bluetooth y Wifi
+* [Control vía Wifi](./MasQueArduino.md#wifi)
 
 ## Internet de las cosas
 * [Introducción a Internet de las Cosas](./base_iot.md) ([IOT](./IOT.md))
-* Publicación de contenido en internet
-* Protocolos de envio de datos (REST, MQTT)
 * [Plataformas online ( Thingspeak, Thinger.io, etc.)](./Plataformas.md)
-* Lectura de tarjetas RFID
+* [Manejo de tarjetas RFID](./rfids.md)
