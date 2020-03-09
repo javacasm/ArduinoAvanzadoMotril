@@ -10,7 +10,7 @@ El sistema está formador por un lector/emisor de radiofrecuencia que incluye un
 
 y unas etiquetas (Tags) que son de diferentes formatos, según la frecuencia a la que funcionan y de la cantidad de información que permiten almacenar. Vemos que todas las etiquetas tienen un circuito que actua como antena receptora, con una frecuencia determinada para la que resuena
 
-![RFID Tag](http://www.ravirajtech.com/rfid-tags.jpg)
+![RFID Tag](./images/rfid-tags.jpg)
 
 El emisor genera un señal de radiofrecuencia que la etiqueta recibe generando un eco que es leído por el lector.
 
