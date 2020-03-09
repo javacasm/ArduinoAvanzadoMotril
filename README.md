@@ -38,11 +38,11 @@
 ## Control de motores
 * Manejo de actuadores analógicos y digitales
 * [Manejo de motores](./motores.md)
-* Control con Infrarrojos
+* [Controlando motores con ESP](https://randomnerdtutorials.com/esp32-dc-motor-l298n-motor-driver-control-speed-direction/)
 * Control vía Bluetooth y Wifi
 
 ## Internet de las cosas
-* [Introducción a Internet de las Cosas](./base_iot.md) ([IOT])(./IOT.md)
+* [Introducción a Internet de las Cosas](./base_iot.md) ([IOT](./IOT.md))
 * Publicación de contenido en internet
 * Protocolos de envio de datos (REST, MQTT)
 * [Plataformas online ( Thingspeak, Thinger.io, etc.)](./Plataformas.md)
