@@ -163,6 +163,7 @@ O controlar su velocidad con un potenciómetro
       Serial.println(Pval); //for debugging
     }
 
+[Código](./codigo/Test_L298.ino)
 
 ![stepper](./images/stepper01.jpg)
 
@@ -221,6 +222,8 @@ Usaremos la librería [AccelStepper](http://www.airspayce.com/mikem/arduino/Acce
 	  }
 	  stepper1.run();
 	}
+
+[Código stepper](./codigo/Test_stepper.ino)
 
 Resumido de [aquí](http://42bots.com/tutorials/28byj-48-stepper-motor-with-uln2003-driver-and-arduino-uno/)
 
